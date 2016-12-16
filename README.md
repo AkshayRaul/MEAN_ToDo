@@ -20,4 +20,4 @@ npm start
 
 Your WebApp is running on https://localhost:3000 port. Monitor your app through console.log. 
 
-<b>Tip:</b> Use PostApp Chrome App for REST services!Postman helps you be more efficient while working with APIs! 
+<b>Tip:</b> Use Postman Chrome App for REST services!Postman helps you be more efficient while working with APIs! 
