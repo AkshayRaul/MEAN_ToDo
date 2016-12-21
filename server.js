@@ -2,7 +2,7 @@ var express = require('express');
 var app=express();
 var bodyParser = require('body-parser')
 var mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost/taskStore");
+//mongoose.connect("mongodb://localhost/test");
 var db= mongoose.connection;
 
 Tasks = require("./models/tasks");

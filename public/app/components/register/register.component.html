@@ -1,0 +1,34 @@
+<div class="container" >
+		<form class="form" role="form">
+			<div class="row">
+			<div class="form-group col-sm-12  ">
+				<input type="text"  class="form-control" placeholder="Username" [(ngModel)]="data.Username" name="data.Username">
+			</div>
+			</div>
+			<div class="row">
+			<div class="form-group col-sm-12 ">
+				<input type="email"  class="form-control" placeholder="Email Address" [(ngModel)]="data.Email_id" name="data.Email_id">
+			</div>
+			</div>
+			<div class="row">
+			<div class="form-group col-sm-12">
+				<input type="password" name="data.Password"  class="form-control" placeholder="Password" [(ngModel)]="data.Password">
+			</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-sm-12">
+						<input type="submit" class="form-control btn btn-success" value="Register Now" (click)="register(data)">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<input type="submit" class="form-control btn btn-danger" value="Signin with Google" ng-init="data.google=1" (click)="register(data)">
+					</div>
+					<div class="col-sm-6">
+						<input type="submit" class="form-control btn btn-primary" value="Signin with Facebook" ng-init="data.fb=1" (click)="register(data)">
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>

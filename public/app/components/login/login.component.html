@@ -1,0 +1,26 @@
+<div class="container" >
+		<form class="form" role="form">
+			<div class="row">
+			<div class="form-group col-sm-12  ">
+				<input type="text" name="data.Username" class="form-control" placeholder="Username" [(ngModel)]="data.Username">
+			</div>
+			</div>
+			<div class="row">
+			<div class="form-group col-sm-12 ">
+				<input type="email" name="data.Email_id" class="form-control" placeholder="Email Address" [(ngModel)]="data.Email_id">
+			</div>
+			</div>
+			<div class="row">
+			<div class="form-group col-sm-12">
+				<input type="password" name="data.Password"  class="form-control" placeholder="Password" [(ngModel)]="data.Password">
+			</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-sm-12">
+						<input type="submit" class="form-control btn btn-success" value="Login" (click)="register(data)">
+					</div>
+				</div>				
+			</div>
+		</form>
+	</div>

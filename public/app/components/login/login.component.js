@@ -11,23 +11,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 require("rxjs/add/operator/toPromise");
 require("rxjs/add/operator/map");
-var register_service_1 = require("./services/register/register.service");
-//=====================================ROOT COMPONENT===========================================
-var AppComponent = (function () {
-    function AppComponent() {
+var LoginComponent = (function () {
+    function LoginComponent() {
+        this.data = {
+            Username: "",
+            Password: ""
+        };
     }
-    AppComponent.prototype.ngOnInit = function () {
+    LoginComponent.prototype.ngOnInit = function () {
     };
-    return AppComponent;
+    return LoginComponent;
 }());
-AppComponent = __decorate([
+LoginComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
-        selector: 'my-app',
-        templateUrl: "app.component.html",
-        providers: [register_service_1.RegService],
+        selector: 'log',
+        templateUrl: 'login.component.html'
     }),
     __metadata("design:paramtypes", [])
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], LoginComponent);
+exports.LoginComponent = LoginComponent;
+//# sourceMappingURL=login.component.js.map

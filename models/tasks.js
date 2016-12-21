@@ -11,10 +11,14 @@ var taskSchema = mongoose.Schema({
         type: Number,
        // required :true
     },
-  complete:{
-    type:Boolean,
-    default: false
-  }
+    author:{
+      type: String,
+      required: true
+    },
+    cover:{
+      type: String,
+      required: true
+    },
 
 });
 var Tasks = module.exports = mongoose.model('tasks', taskSchema);
